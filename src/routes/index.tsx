@@ -23,13 +23,13 @@ const WHATSAPP_URL = "https://wa.me/message/4N5KY3Z4W2XAC1";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lucía Romero — Nutrición deportiva en Ramos Mejía y online" },
+      { title: "Lucía Morbidoni — Nutricionista | Ramos Mejía y Virtual" },
       {
         name: "description",
         content:
-          "Nutrición deportiva, cambio de hábitos y antropometría ISAK II. Turnos presenciales en Ramos Mejía y consultas virtuales. Te ayudo a alcanzar tus objetivos.",
+          "Nutrición deportiva, cambio de hábitos y antropometría ISAK II. Turnos presenciales en Ramos Mejía y consultas virtuales. MN 11722.",
       },
-      { property: "og:title", content: "Lucía Romero — Nutrición deportiva" },
+      { property: "og:title", content: "Lucía Morbidoni — Nutricionista" },
       {
         property: "og:description",
         content:
@@ -48,7 +48,7 @@ function Navbar() {
           <span className="grid h-8 w-8 place-items-center rounded-full bg-primary text-primary-foreground">
             <Leaf className="h-4 w-4" />
           </span>
-          Lucía Romero
+          Lucía Morbidoni
         </Link>
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           <a href="#servicios" className="hover:text-foreground">Servicios</a>
@@ -125,7 +125,7 @@ function Hero() {
           <div className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-[0_30px_80px_-30px_oklch(0.55_0.06_145/0.35)]">
             <img
               src={heroImg}
-              alt="Lucía Romero, nutricionista deportiva"
+              alt="Lucía Morbidoni, nutricionista deportiva"
               width={1080}
               height={1350}
               className="aspect-[4/5] w-full object-cover"
@@ -384,7 +384,7 @@ function Footer() {
           <span className="grid h-7 w-7 place-items-center rounded-full bg-primary text-primary-foreground">
             <Leaf className="h-3.5 w-3.5" />
           </span>
-          Lucía Romero · Nutrición deportiva
+          Lucía Morbidoni · MN 11722
         </div>
         <div className="flex items-center gap-4 text-xs text-muted-foreground">
           <a
@@ -395,7 +395,16 @@ function Footer() {
           >
             <MessageCircle className="h-3.5 w-3.5" /> WhatsApp
           </a>
-          <span>© {new Date().getFullYear()} Lucía Romero</span>
+          <span>© {new Date().getFullYear()} Lucía Morbidoni</span>
+          <span>·</span>
+          <a
+            href="https://encende.click"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground"
+          >
+            Creado por encende.click
+          </a>
         </div>
       </div>
     </footer>
